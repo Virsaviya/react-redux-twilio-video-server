@@ -18,6 +18,8 @@ var randomName = require('./randomName');
 // Create Express webapp.
 var app = express();
 
+app.get('/', (req, res) => res.send('Hi there.'));
+
 /**
  * Generate an Access Token for a chat application user - it generates a random
  * username for the client requesting a token, and takes a device ID as a query
